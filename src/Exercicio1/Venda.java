@@ -22,6 +22,8 @@ abstract class Venda {
         return codigoDeBarras;
     }
 
+// Estudar mais o "equals" e o "hashCode"
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -14,6 +14,5 @@ public class Main {
             System.out.println(forma1.calcularArea());
             System.out.println(forma1.calcularPerimetro()+"\n");
         }
-
     }
 }

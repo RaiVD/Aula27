@@ -12,24 +12,27 @@ public class Loja {
         venda[3] = new Livro("Para todos garotos que ja amei", 65.00, "Jenny Han", 123458765);
         venda[4] = new DVDs("Calypso", 15.00, 12, 12345676);
 
+        venda[5] = new Livro("Para todos garotos que ja amei", 65.00, "Jenny Han", 123458765);
+        venda[6] = new Livro("Para todos garotos que ja amei", 65.00, "Jenny Han", 123998765);
+
         for (Venda vendas : venda) {
             System.out.println("_______________________________________________________");
             System.out.println(vendas.mostrarDetalhesDoItem());
         }
 
+        System.out.println("_______________________________________________________");
         System.out.println("Comparação 1: "+venda[3].equals(venda[5]));
         System.out.println("Comparação 2: "+venda[4].equals(venda[2]));
 
-        venda[5] = new Livro("Para todos garotos que ja amei", 65.00, "Jenny Han", 123458765);
-        venda[6] = new Livro("Para todos garotos que ja amei", 65.00, "Jenny Han", 123998765);
-
         int i = 0;
+
         for (Venda vendas : venda) {
             if (vendas.nome.equals("Barbie")) {
                 System.out.println("_______________________________________________________");
                 System.out.println("Produto encontrado posição: " + (i + 1));
                 break;
-            }else{
+            }
+            if(i == venda.length-1){
                 System.out.println("Produto não encontrado.");
             }
             i++;

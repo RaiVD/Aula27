@@ -22,7 +22,7 @@ public class Loja {
 
         System.out.println("_______________________________________________________");
         System.out.println("Comparação 1: "+venda[3].equals(venda[5]));
-        System.out.println("Comparação 2: "+venda[4].equals(venda[2]));
+        System.out.println("Comparação 2: "+venda[4].equals(venda[6]));
 
         int i = 0;
 

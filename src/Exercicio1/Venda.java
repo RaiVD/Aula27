@@ -1,6 +1,7 @@
 package Exercicio1;
-
 import java.util.Objects;
+
+// COMMITEI NOVAMENTE DEPOIS DO HORARIO PARA ACRESCENTAR O getCodigoDeBarras NOS MEUS METODOS!
 
 abstract class Venda {
     protected String nome;
@@ -17,12 +18,15 @@ abstract class Venda {
                 "\nNome: " + this.nome +
                 "\nPreco: " + this.preco;
     }
+    public int getCodigoDeBarras() {
+        return codigoDeBarras;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Venda venda)) return false;
-        return codigoDeBarras == venda.codigoDeBarras;
+        return getCodigoDeBarras() == venda.codigoDeBarras;
     }
 
     @Override
